@@ -166,6 +166,7 @@ resource "aws_db_instance" "sakura_db" {
   username             = each.value.username
   password             = each.value.password
   db_name              = each.value.db_name
+  skip_final_snapshot  = each.value.skip_final_snapshot
 
   tags = merge(each.value.tags, {
     Name = each.key

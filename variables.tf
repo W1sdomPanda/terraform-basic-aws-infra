@@ -131,6 +131,7 @@ variable "sakura_psql_db" {
     db_name                = string
     username               = string
     password               = string
+    skip_final_snapshot    = bool
     tags                   = optional(map(string), {})
   }))
 }
