@@ -104,7 +104,7 @@ module "vpc" {
     }
   }
 
-  my_ip = "176.122.119.139"
+  my_ip = "72.14.201.51"
   
   sakura_db_subnet_group = {
     sakura_db_subnet_group = {
@@ -124,6 +124,7 @@ module "vpc" {
       db_name           = "db_name"
       username          = "username"
       password          = "password"
+      skip_final_snapshot = true
     }
   }
   postgresql_role = {
